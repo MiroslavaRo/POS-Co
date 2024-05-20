@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POS-Co</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+        $("#popup").load("popup.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="header"></header>
+      <main class="page webshop">
+        <section class="main reveal reveal-top-main" id="main">
+          <div class="main__container">
+            <div class="main__header reveal reveal-top-main">
+              <h1 class="main-title">Manage your business online</h1>
+              <div class="main-text">
+                <p>
+                  Make your life easier with the integrated POS system from
+                  POS-Co.
+                </p>
+              </div>
+              <div class="main-actions">
+                <a onclick="openPopup()" class="button">Get started</a>
+              </div>
+            </div>
+            <div class="main-image reveal reveal-top-main">
+              <img src="img/on-screen.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="online">
+          <div class="online__container">
+            <div class="text-header reveal reveal-top">
+              <h2 class="title">Online website</h2>
+              <div class="text">
+                <p>
+                  Automatically integrated with POS-Co’s system, requiring no
+                  additional effort and providing fast access to data. Make your
+                  webshop ready for real life challenges in a few clicks!
+                </p>
+              </div>
+            </div>
+            <div class="row reveal reveal-bottom-main">
+              <div class="column column-img">
+                <img src="img/features/online-shopping.jpg" alt="" />
+              </div>
+              <div class="column column-content">
+                <h2 class="title">Main benefits</h2>
+                <div class="text">
+                  <p>
+                    Adjust the necessary parameters to your needs from your
+                    account and continue working without encountering any
+                    further obstacles!
+                  </p>
+                  <ul class="list list-featured">
+                    <li>Automatically integrated into the POS-Co’s system.</li>
+                    <li>
+                      Your own account, which you can consult from your device
+                      (smartphone, tablet, laptop, etc.).
+                    </li>
+                    <li>
+                      Products and prices are automatically taken from the
+                      checkout.
+                    </li>
+                    <li>
+                      Receive customer orders directly on your POS and current
+                      POS printer.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="actions reveal reveal-bottom-main">
+              <a onclick="openPopup()" class="button button-round"
+                >Contact us</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="orders">
+          <div class="orders__container">
+            <div class="text-header reveal reveal-bottom-main">
+              <h2 class="title">Manage orders</h2>
+              <div class="text">
+                <p>
+                  Control your ruminative order system to improve the user
+                  experience of your customers.
+                </p>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card reveal reveal-bottom-main">
+                <div class="card-icon">
+                  <img src="img/icons/tablet.svg" alt="" />
+                </div>
+                <h3 class="mid-title">Order page establishing</h3>
+                <div class="text">
+                  <p>
+                    Pricing and product information are automatically pulled
+                    from the checkout.
+                  </p>
+                </div>
+              </div>
+              <div class="card reveal reveal-bottom-main">
+                <div class="card-icon">
+                  <img src="img/icons/setting-5-svgrepo-com.svg" alt="" />
+                </div>
+                <h3 class="mid-title">Extensive set of settings</h3>
+                <div class="text">
+                  <p>
+                    Including minimum amounts, different delivery zones,
+                    separate preferences for pick-up and deliveries, etc.
+                  </p>
+                </div>
+              </div>
+              <div class="card reveal reveal-bottom-main">
+                <div class="card-icon">
+                  <img src="img/icons/clock-two-svgrepo-com.svg" alt="" />
+                </div>
+                <h3 class="mid-title">Great control over orders</h3>
+                <div class="text">
+                  <p>
+                    Too busy? Easily suggest a different time to your customers.
+                  </p>
+                </div>
+              </div>
+              <div class="card reveal reveal-bottom-main">
+                <div class="card-icon">
+                  <img src="img/icons/coin-svgrepo-com.svg" alt="" />
+                </div>
+                <h3 class="mid-title">Different prices</h3>
+                <div class="text">
+                  <p>
+                    Do you have different (minimum) prices for deliveries or
+                    orders? Set them to one-two-three!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="webpay">
+          <div class="webpay__container">
+            <div class="text-header reveal reveal-top-main">
+              <h2 class="title">Payment without limits</h2>
+              <span></span>
+            </div>
+            <div class="stickers">
+              <div class="sticker reveal reveal-left">
+                <div class="sticker-icon">
+                  <img
+                    src="img/icons/screen-smartphone-svgrepo-com.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="sticker-content">
+                  <h4 class="small-title">Online payments</h4>
+                  <div class="text">
+                    <ul class="list">
+                      <li>Easy connection with a payment provider.</li>
+                      <li>
+                        Let your customers pay for their order in advance,
+                        either optionally or mandatory.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="sticker reveal reveal-right">
+                <div class="sticker-icon">
+                  <img src="img/icons/hand-shake-svgrepo-com.svg" alt="" />
+                </div>
+                <div class="sticker-content">
+                  <h4 class="small-title">Fixed monthly fee</h4>
+                  <div class="text">
+                    <p>
+                      Do not pay increasing and unpredictable commissions or
+                      percentages, but a fixed agreed amount per month!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="kiosk">
+          <div class="kiosk__container">
+            <div class="row">
+              <div class="column column-img reveal reveal-left">
+                <img src="img/kiosk.jpg" alt="" />
+              </div>
+              <div class="column column-content reveal reveal-right">
+                <h2 class="title">Kiosk</h2>
+                <div class="text">
+                  <p>
+                    Via our Touchscreen Kiosk you can choose to let your
+                    customers enter their orders and/or pay for them in your
+                    chip shop so that you or your staff do not have to wait.
+                  </p>
+                </div>
+                <a onclick="openPopup()" class="button button-round"
+                  >Get started</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="footer"></footer>
+      <div class="popup-holder" id="popup"></div>
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="fa-solid fa-arrow-up" id="arrow-up"></i>
+      </a>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/contacts.js"></script>
+  </body>
+</html>

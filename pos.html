@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POS-Co</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+        $("#popup").load("popup.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="header"></header>
+      <main class="page pos-page">
+        <section class="main reveal reveal-top-main" id="main">
+          <div class="main__container">
+            <div class="main__header reveal reveal-top-main">
+              <h1 class="main-title">Ideal POS for your catering business</h1>
+              <div class="main-text">
+                <p>
+                  A reliable system with wide range of settings and intuitive
+                  design.
+                </p>
+              </div>
+              <div class="main-actions">
+                <a onclick="openPopup()" class="button">Get started</a>
+              </div>
+            </div>
+            <div class="main-image reveal reveal-top-main">
+              <img src="img/system.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="software">
+          <div class="software__container">
+            <div class="text-header reveal reveal-top">
+              <h2 class="title">POS-Co’s POS software</h2>
+            </div>
+            <div class="row reveal reveal-left">
+              <div class="column column-img">
+                <img src="img/features/feature-4.jpg" alt="" />
+              </div>
+              <div class="column column-content">
+                <h3 class="title">High-quality system</h3>
+                <div class="text">
+                  <ul class="list list-featured">
+                    <li>User-friendly and reliable.</li>
+                    <li>Reviewing menu and ordering via a QR application.</li>
+                    <li>
+                      Linking the online website and webshop of Klik & Eet with
+                      the POS system to enable customers to place online orders
+                      and payments.
+                    </li>
+                  </ul>
+                </div>
+                <a onclick="openPopup()" class="button button-round"
+                  >Get started</a
+                >
+              </div>
+            </div>
+            <div class="row row-reverse reveal reveal-right">
+              <div class="column column-img">
+                <img src="img/features/feature-2.jpeg" alt="" />
+              </div>
+              <div class="column column-content">
+                <h3 class="title">Unlimited functionality</h3>
+                <div class="text">
+                  <ul class="list list-featured">
+                    <li>Graphical and detailed table plan possible.</li>
+                    <li>Unlimited number of items, tables, waiters.</li>
+                    <li>Move and reopen tables.</li>
+                  </ul>
+                </div>
+                <a onclick="openPopup()" class="button button-round"
+                  >Get started</a
+                >
+              </div>
+            </div>
+            <div class="row reveal reveal-left">
+              <div class="column column-img">
+                <img src="img/features/feature-3.jpeg" alt="" />
+              </div>
+              <div class="column column-content">
+                <h3 class="title">Easy to manage</h3>
+                <div class="text">
+                  <ul class="list list-featured">
+                    <li>
+                      Create notifications to the bar and kitchen printer.
+                    </li>
+                    <li>User-friendly and reliable.</li>
+                    <li>Create waiters, modify items and position tables.</li>
+                    <li>
+                      Entering a purchase price with a selling coefficient.
+                    </li>
+                  </ul>
+                </div>
+                <a onclick="openPopup()" class="button button-round"
+                  >Get started</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="features">
+          <div class="features__container">
+            <div class="text-header reveal reveal-right">
+              <h2 class="title">Features that will make your life easier</h2>
+            </div>
+            <div class="cards">
+              <div class="card reveal reveal-right">
+                <h3 class="mid-title">Compatible with any hardware</h3>
+                <div class="text">
+                  <ul class="list list-featured">
+                    <li>
+                      System works under a Windows® environment and is flexible
+                      under the different types of hardware, so drivers are
+                      unnecessary!
+                    </li>
+                    <li>
+                      All kinds of Handhelds and Smartphones, with which you can
+                      send orders wirelessly to the POS system.
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-img">
+                  <img src="img/kiosk-with-app.jpg" alt="" />
+                </div>
+              </div>
+              <div class="card reveal reveal-right">
+                <h3 class="mid-title">Easy manage receipts</h3>
+                <div class="card-img">
+                  <img src="img/bill-printer.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <ul class="list list-featured">
+                    <li>Unlimited receipt printers.</li>
+                    <li>
+                      <div>
+                        Works with all types of receipt printers:
+                        <ul class="list sub-list">
+                          <li>Epson</li>
+                          <li>Star</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card reveal reveal-right">
+                <h3 class="mid-title">Barcodes scaning and scales</h3>
+                <div class="text">
+                  <p>
+                    Allow your customers to order via a QR application, which
+                    also allows them to view your menu.
+                  </p>
+                </div>
+                <div class="card-img">
+                  <img src="img/scaning.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="payment">
+          <div class="payment__container">
+            <div class="text-header reveal reveal-top-main">
+              <h2 class="title">Payment</h2>
+              <div class="text">
+                <p>
+                  The system, that allows to quickly and effortlessly handle
+                  bills, offers various methods of payment and connection to
+                  terminals to your taste. Try and see for yourself!
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="column column-content reveal reveal-left">
+                <div class="text">
+                  <ul class="list list-featured">
+                    <li>
+                      <div>
+                        Links to terminal of your choice
+                        <p class="text">
+                          Easily connects to small and large payment terminals
+                          like Cash Infinity types: CI5 and CI10.
+                        </p>
+                      </div>
+                      <span></span>
+                    </li>
+                    <li>
+                      <div>
+                        Allows you to make payments and various payment methods
+                        <div class="row-list" id="methods">
+                          <ul class="list">
+                            <li>Cash</li>
+                            <li>Credit and debit</li>
+                            <li>Google/Apple Pay</li>
+                          </ul>
+                          <ul class="list">
+                            <li>Split payments</li>
+                            <li>Bancontact</li>
+                            <li>Payconiq</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <a onclick="openPopup()" class="button button-round"
+                  >Get in touch</a
+                >
+              </div>
+              <div class="column column-img reveal reveal-right">
+                <img src="img/terminal.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="businesses">
+          <div class="businesses__container">
+            <div class="text-header reveal reveal-top">
+              <h2 class="title">POS for any kind of food service business</h2>
+            </div>
+            <div class="b-cards">
+              <div class="b-card reveal reveal-bottom">
+                <div class="b-card-icon">
+                  <img src="img/icons/restaurant-svgrepo-com.svg" alt="" />
+                </div>
+                <h4 class="small-title">Restaurant</h4>
+              </div>
+              <div class="b-card reveal reveal-bottom">
+                <div class="b-card-icon">
+                  <img src="img/icons/cocktail-svgrepo-com.svg" alt="" />
+                </div>
+                <h4 class="small-title">Bar</h4>
+              </div>
+              <div class="b-card reveal reveal-bottom">
+                <div class="b-card-icon">
+                  <img src="img/icons/coffee-to-go-svgrepo-com.svg" alt="" />
+                </div>
+                <h4 class="small-title">Coffe shop</h4>
+              </div>
+              <div class="b-card reveal reveal-bottom">
+                <div class="b-card-icon">
+                  <img src="img/icons/bread-svgrepo-com.svg" alt="" />
+                </div>
+                <h4 class="small-title">Bakery</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="footer"></footer>
+      <div class="popup-holder" id="popup"></div>
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="fa-solid fa-arrow-up" id="arrow-up"></i>
+      </a>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/contacts.js"></script>
+  </body>
+</html>

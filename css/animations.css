@@ -1,0 +1,110 @@
+.reveal-top-main {
+    position: relative;
+    transform: translateY(-10%);
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.reveal-top {
+    position: relative;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.reveal-bottom {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.reveal-bottom-main {
+    position: relative;
+    transform: translateY(15%);
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.reveal-left {
+    position: relative;
+    transform: translateX(-10%);
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.reveal-right {
+    position: relative;
+    transform: translateX(10%);
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+
+
+.reveal.show {
+    transform: translateY(0px);
+    transform: translateX(0px);
+    filter: blur(0px);
+    opacity: 1;
+}
+
+/* ==================== */
+.main__header {
+    transition-delay: 0.2s;
+}
+
+.main-image {
+    transition-delay: 0.3s;
+}
+
+/* ---- */
+
+.b-card,
+.pos-page .card,
+.webshop .card,
+.sticker,
+.pocket li {
+    transition-delay: 0.2s;
+}
+
+.pocket li:nth-child(2) {
+    transition-delay: 0.3s;
+}
+
+.b-card:nth-child(2),
+.pos-page .card:nth-child(2),
+.webshop .card:nth-child(2),
+.index .review,
+.sticker:nth-child(2),
+.pocket .actions,
+.pocket li:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+.pocket li:nth-child(4) {
+    transition-delay: 0.5s;
+}
+
+.b-card:nth-child(3),
+.pos-page .card:nth-child(3),
+.webshop .card:nth-child(3),
+.sticker:nth-child(3) {
+    transition-delay: 0.6s;
+}
+
+.b-card:nth-child(4),
+.webshop .card:nth-child(4) {
+    transition-delay: 0.8s;
+}
+
+/* ---- */
+.services__example {
+    transition-delay: 0.2s;
+
+}
+
+.pocket__container li {
+    transition-delay: 0.2s;
+
+}

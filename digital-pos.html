@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POS-Co</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+        $("#popup").load("popup.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="header"></header>
+      <main class="page digital">
+        <section class="main reveal reveal-top-main" id="main">
+          <div class="main__container">
+            <div class="main__header reveal reveal-top-main">
+              <h1 class="main-title">Wireless ordering and checkout</h1>
+              <div class="main-text">
+                <p>
+                  Avoid long queues at the checkout by using wireless POS.
+                  Everything is sent directly and completely wireless from the
+                  Orderman to the kitchen or bar.
+                </p>
+              </div>
+              <div class="main-actions">
+                <a onclick="openPopup()" class="button">Get started</a>
+              </div>
+            </div>
+            <div class="main-image reveal reveal-top-main">
+              <img src="img/oderman.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="pocket">
+          <div class="pocket__container">
+            <div class="text-header reveal reveal-top">
+              <h2 class="title">Pocket system</h2>
+              <div class="text">
+                <p>
+                  Wireless ordering and payment via the renowned brand Orderman
+                  & Android devices! Placing orders, checkout, table management,
+                  you name it.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <ul class="list list-featured">
+                  <li class="reveal reveal-top">
+                    Easy wireless ordering, splitting, moving and checkout of a
+                    table.
+                  </li>
+                  <li class="reveal reveal-top">Clear table management.</li>
+                  <li class="reveal reveal-top">
+                    Unlimited number of articles and tables.
+                  </li>
+                  <li class="reveal reveal-top">
+                    Works simultaneously with the POS system over very long
+                    distances.
+                  </li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul class="list list-featured">
+                  <li class="reveal reveal-top">
+                    Compatible with wireless bluetooth ticket printers.
+                  </li>
+                  <li class="reveal reveal-top">
+                    Identical layout, just like the cash register.
+                  </li>
+                  <li class="reveal reveal-top">
+                    Unlimited number of articles and tables.
+                  </li>
+                  <li class="reveal reveal-top">
+                    Unlimited handhelds/pockets.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="actions reveal reveal-top">
+              <a onclick="openPopup()" class="button button-round"
+                >Contact us</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="oderman">
+          <div class="oderman__container">
+            <div class="row">
+              <div class="column column-img reveal reveal-left">
+                <img src="img/oderman-handheld.png" alt="" />
+              </div>
+              <div class="column column-content reveal reveal-right">
+                <h2 class="title">Explore Oderman</h2>
+                <div class="text">
+                  <p>
+                    Leaders among handheld devices. Stylish, light and
+                    convenient to use. The worthwhile experience!
+                  </p>
+                </div>
+                <a
+                  href="https://orderman.com/en/pos/"
+                  class="button button-round"
+                  >Take a look</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="devider"></section>
+      </main>
+      <footer id="footer"></footer>
+      <div class="popup-holder" id="popup"></div>
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="fa-solid fa-arrow-up" id="arrow-up"></i>
+      </a>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/contacts.js"></script>
+  </body>
+</html>

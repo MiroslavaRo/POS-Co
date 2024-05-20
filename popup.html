@@ -1,0 +1,94 @@
+<div class="overlay" id="overlay">
+  <div class="popup" id="popup-inner">
+    <div class="popup__header">
+      <h2 class="contacts__title title">Contact us</h2>
+    </div>
+    <div class="popup__content">
+      <div class="contacts__collmn popup__contacts" id="popup-contacts">
+        <ul>
+          <li class="contacts__item phone">
+            <a href="tel:0000000000" title="Call us">+0000000000</a>
+          </li>
+          <li class="contacts__item address">
+            <a
+              href="https://maps.app.goo.gl/iYqkqEwtxM3wGZDz7"
+              title="Open google maps"
+              target="_blank"
+              >pl. "Nezavisimost" 1<br />
+              9000 Varna</a
+            >
+          </li>
+        </ul>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6768.656167287049!2d27.910134185609603!3d43.205593873416234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a453f4f4e58f8d%3A0x8f6fdc2525b4e11f!2sOpera%20Varna!5e0!3m2!1sen!2sbg!4v1716200608141!5m2!1sen!2sbg"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <div
+        class="contacts__button button"
+        id="display-form"
+        onclick="showForm()"
+      >
+        Send email
+      </div>
+      <form
+        action="contacts.php"
+        method="post"
+        role="form"
+        class="contacts__collmn popup__form"
+        id="popup-form"
+      >
+        <div class="form">
+          <div class="messages" id="messages"></div>
+          <div class="form__row">
+            <div class="error" id="name-error">Name field can't be empty.</div>
+            <input type="text" id="name" name="name" placeholder="Name*" />
+          </div>
+          <div class="form__row">
+            <div class="error" id="phone-error">Invalid phone number.</div>
+            <input type="tel" id="phone" name="phone" placeholder="Phone" />
+          </div>
+          <div class="form__row">
+            <div class="error" id="email-error">Invalid email address.</div>
+            <input type="email" id="email" name="email" placeholder="Email*" />
+          </div>
+          <div class="form__row">
+            <div class="error" id="message-error">
+              Message field can't be empty.
+            </div>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message*"
+            ></textarea>
+          </div>
+          <div class="popup__action">
+            <div class="lds-ring" id="loader">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <input
+              id="submit-btn"
+              class="contacts__button button"
+              type="submit"
+              value="Send"
+            />
+          </div>
+        </div>
+        <div class="popup__actions hidden"></div>
+      </form>
+    </div>
+    <button
+      type="button"
+      class="close-btn"
+      aria-label="Close"
+      onclick="closePopup()"
+    ></button>
+  </div>
+</div>
